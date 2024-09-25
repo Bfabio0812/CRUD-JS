@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros CRUD</title>
+</head>
+
+<body>
+    <h1>Lista de Libros</h1>
+
+    <!-- Tabla donde se mostrarán los libros -->
+    <table id="tabla-libros">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí se agregarán dinámicamente las filas de libros -->
+        </tbody>
+    </table>
+
+    <h2>Agregar Libro</h2>
+    <!-- Formulario para agregar un libro ------>
+    <form id="form-agregar">
+        <input type="text" id="titulo" name="titulo" placeholder="Título">
+        <input type="text" id="autor" name="autor" placeholder="Autor">
+        <input type="number" id="edad" name="edad" placeholder="Edad">
+        <button type="submit">Agregar</button>
+    </form>
+
+    <h2>Editar Libro</h2>
+    <!-- Formulario para editar un libro -->
+    <form id="form-editar">
+        <input type="text" id="editar-id" name="id" placeholder="ID del libro">
+        <input type="text" id="editar-titulo" name="titulo" placeholder="Nuevo Título">
+        <input type="text" id="editar-autor" name="autor" placeholder="Nuevo Autor">
+        <input type="number" id="editar-edad" name="edad" placeholder="Nueva Edad">
+        <button type="submit">Editar</button>
+    </form>
+
+    <h2>Eliminar Libro</h2>
+    <!-- Formulario para eliminar un libro -->
+    <form id="form-eliminar">
+        <input type="text" id="eliminar-id" name="id" placeholder="ID del libro">
+        <button type="submit">Eliminar</button>
+    </form>
+
+    <!-- Cargar los archivos JavaScript para la lógica del frontend -->
+    <script src="frontend.js"></script> <!-- Aquí se conecta el archivo externo -->
+</body>
+
+</html>
